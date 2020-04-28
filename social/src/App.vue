@@ -1,16 +1,20 @@
 <template>
   <div id="app">
-    <!-- <img src="./assets/logo.png"> -->
-    <router-view/>
+    <nav-bar cor="green darken-1" logo="Social" url="#" />
+    <router-view />
   </div>
 </template>
 
 <script>
+import NavBar from '@/components/layouts/NavBar'
+
 export default {
-  name: 'App'
-}
+  name: "App",
+  components: {
+    NavBar
+  }
+};
 </script>
 
 <style>
-
 </style>
