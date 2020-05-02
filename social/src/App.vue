@@ -56,7 +56,6 @@ import NavBar from "@/components/layouts/NavBar";
 import FooterVue from "@/components/layouts/FooterVue";
 import GridVue from "@/components/layouts/GridVue";
 import CardMenuVue from "@/components/layouts/CardMenuVue";
-// import CardConteudoVue from "@/components/social/CardConteudoVue";
 
 export default {
   name: "App",
@@ -64,8 +63,7 @@ export default {
     NavBar,
     FooterVue,
     GridVue,
-    CardMenuVue,
-    // CardConteudoVue
+    CardMenuVue
   }
 };
 </script>
