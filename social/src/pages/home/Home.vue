@@ -1,34 +1,32 @@
 <template>
-  <div class>
-    <h2>Social</h2>
-
-    <div class="row">
-      <div class="col s12 m6">
-        <div class="card blue-grey darken-1">
-          <div class="card-content white-text">
-            <span class="card-title">Card Title</span>
-            <p>
-              I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.
-            </p>
-          </div>
-          <div class="card-action">
-            <a href="#">This is a link</a>
-            <a href="#">This is a link</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <card-conteudo-vue
+    perfil="https://materializecss.com/images/yuna.jpg"
+    nome="Maria Silva"
+    data="02/05/2020 13:20"
+  >
+    <card-detalhe-vue 
+      img="https://materializecss.com/images/sample-1.jpg" 
+      titulo=""
+      txt="I am a very simple card. I am good at containing small bits of information.
+        I am convenient because I require little markup to use effectively."  
+    />
+  </card-conteudo-vue>
 </template>
 
 <script>
+import CardConteudoVue from "@/components/social/CardConteudoVue";
+import CardDetalheVue from "@/components/social/CardDetalheVue";
+
 export default {
   name: "Home",
   data() {
     return {
       msg: ""
     };
+  },
+  components: {
+    CardConteudoVue,
+    CardDetalheVue
   }
 };
 </script>
