@@ -2,7 +2,7 @@
   <nav :class="cor || 'blue'">
     <div class="nav-wrapper container">
       <!-- <a v-bind:href="url || '#'" class="brand-logo">{{ logo }}</a> -->
-      <a :href="url || '#'" class="brand-logo">{{ logo || 'Site' }}</a>
+      <a :href="url || '#'" class="brand-logo">{{ logo || 'Logo' }}</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li>
           <a href="sass.html">Sass</a>
