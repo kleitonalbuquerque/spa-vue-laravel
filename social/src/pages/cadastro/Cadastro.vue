@@ -1,5 +1,5 @@
 <template>
-  <login-template>
+  <cadastro-template>
     <div slot="menuesquerdo">
       <img
         src="https://meanstack.com.br/wp-content/uploads/2020/05/social.jpg"
@@ -9,28 +9,28 @@
     </div>
 
     <div slot="principal">
-      <h2>Login</h2>
+      <h2>Cadastro</h2>
 
+      <input type="text" placeholder="Nome" value />
       <input type="text" placeholder="E-mail" value />
       <input type="password" placeholder="Senha" name id />
-      <button class="btn">Entrar</button>
-      <router-link to="/cadastro" class="btn orange">Cadastre-se</router-link> 
+      <input type="password" placeholder="Confirmar Senha" name id />
+      <button type="button" class="btn">Enviar</button>
+      <router-link to="/login" class="btn orange">Já possuo conta</router-link>
     </div>
-  </login-template>
+  </cadastro-template>
 </template>
 
 <script>
-import LoginTemplate from "@/templates/LoginTemplate";
+import CadastroTemplate from "@/templates/CadastroTemplate";
 
 export default {
-  name: "Login",
+  name: "Cadastro",
   data() {
-    return {
-      
-    };
+    return {};
   },
   components: {
-    LoginTemplate
+    CadastroTemplate
   }
 };
 </script>

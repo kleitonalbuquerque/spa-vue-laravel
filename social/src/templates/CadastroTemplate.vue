@@ -53,7 +53,7 @@ import GridVue from "@/components/layouts/GridVue";
 import CardMenuVue from "@/components/layouts/CardMenuVue";
 
 export default {
-  name: "LoginTemplate",
+  name: "CadastroTemplate",
   components: {
     NavBar,
     FooterVue,
