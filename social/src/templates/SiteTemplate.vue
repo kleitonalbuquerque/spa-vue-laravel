@@ -87,6 +87,7 @@ export default {
     sair() {
       sessionStorage.clear();
       this.usuario = false;
+      this.$router.push('/login');
     }
   },
 };
