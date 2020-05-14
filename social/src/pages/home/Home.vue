@@ -37,6 +37,7 @@ import SiteTemplate from "@/templates/SiteTemplate";
 import CardConteudoVue from "@/components/social/CardConteudoVue";
 import CardDetalheVue from "@/components/social/CardDetalheVue";
 import PublicarConteudoVue from "@/components/social/PublicarConteudoVue";
+import GridVue from "@/components/layouts/GridVue";
 
 export default {
   name: "Home",
@@ -49,7 +50,8 @@ export default {
     SiteTemplate,
     CardConteudoVue,
     CardDetalheVue,
-    PublicarConteudoVue
+    PublicarConteudoVue,
+    GridVue
   }
 };
 </script>
