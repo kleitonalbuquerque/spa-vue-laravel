@@ -2,9 +2,6 @@
   <div id="app">
     <header>
       <nav-bar cor="green darken-1" logo="Social" url="/">
-        <li>
-          <router-link to="/">Home</router-link>
-        </li>
         <li v-if="!usuario">
           <router-link to="/login">Entrar</router-link>
         </li>
