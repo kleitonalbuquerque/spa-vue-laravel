@@ -2,7 +2,7 @@
   <login-template>
     <div slot="menuesquerdo">
       <img
-        src="https://meanstack.com.br/wp-content/uploads/2020/05/social.jpg"
+        src="https://meanstack.com.br/wp-content/uploads/2020/06/social-scaled.jpg"
         class="responsive-img"
         alt="social"
       />
