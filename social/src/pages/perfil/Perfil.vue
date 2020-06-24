@@ -1,11 +1,7 @@
 <template>
   <site-template>
     <div slot="menuesquerdo">
-      <img
-        src="https://meanstack.com.br/wp-content/uploads/2020/06/social-scaled.jpg"
-        class="responsive-img"
-        alt="social"
-      />
+      <img :src="usuario.imagem" class="responsive-img" alt="img-perfil" />
     </div>
 
     <div slot="principal">
@@ -73,9 +69,6 @@ export default {
         this.imagem = e.target.result
       };
       reader.readAsDataURL(arquivo[0])
-
-
-      console.log(this.imagem);
     },
     perfil() {
       // console.log("ok");
@@ -91,7 +84,8 @@ export default {
           if(response.data.token) {
             // login com sucesso
             console.log(response.data);
-            sessionStorage.setItem('usuario', JSON.stringify(response.data));
+            this.usuario = response.data;
+            sessionStorage.setItem('usuario', JSON.stringify(this.usuario));
             alert('Perfil atualizado!')
           // }else if(response.data.status == false) {
           //   // login não exite
