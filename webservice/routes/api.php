@@ -107,6 +107,13 @@ Route::middleware('auth:api')->put('/perfil', function (Request $request) {
             mkdir($diretorioPai, 0700);
         }
 
+        // removendo imagens antigas
+        if ($user->imagem) {
+            if (file_exists($user->imagem)) {
+                unlink($user->imagem);
+            }
+        }
+
         if (!file_exists($diretorioImagem)) {
             mkdir($diretorioImagem, 0700);
         }
@@ -116,9 +123,7 @@ Route::middleware('auth:api')->put('/perfil', function (Request $request) {
         $user->imagem = $urlImagem;
     }
 
-
     $user->save();
-
 
     $user->imagem = asset($user->imagem);
     $user->token = $user->createToken($user->email)->accessToken;
